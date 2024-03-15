@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body class="top">
+    <section class="top">
+      <img class="background" src="images/bg-desktop-light.jpg" alt="" />
+      <div class="todo--list">
+        <main class="list">
+          <label class="list__h2">TODO</label>
+          <div class="light-theme" role="button" tabindex="0">
+            <img class="moon" src="images/icon-moon.svg" alt="moon-icon" />
+          </div>
+          <img class="dark-theme" src="images/icon-sun.svg" alt="sun-icon" />
+        </main>
+        <form class="form">
+          <div class="checkbox" role="button" tabindex="0">
+            <button class="add-sign">+</button>
+          </div>
+          <input
+            class="todo-input"
+            type="text"
+            placeholder="Create a new todo..."
+            required
+          />
+        </form>
+        <ul class="tasks__list"></ul>
+        <p class="dragtext">Drag and drop to reorder list</p>
+      </div>
+    </section>
+    <div class="bottom"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
